@@ -21,7 +21,7 @@ const TrekPage: React.FC = () => {
       <section className="relative h-[420px] overflow-hidden">
         {heroImage && (
           <img
-            src={heroImage}
+            src="/KAN.jpg"
             alt={title}
             className="absolute inset-0 h-full w-full object-cover"
           />
