@@ -10,7 +10,7 @@ export default function HomeLayout({
     return (
         <div lang="en">
             <Navbar />
-            <main className="min-h-screen bg-gradient-to-br from-gray-100/10 to-gray-200/20 backdrop-blur-xl shadow-inner text-slate-900">
+            <main className="min-h-screen bg-linear-to-br from-gray-100/10 to-gray-200/20 backdrop-blur-xl shadow-inner text-slate-900">
                 {children}
             </main>
 

@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import {
-    Mountain,
     Users,
     ShieldCheck,
     Globe,
@@ -20,7 +19,7 @@ const About = () => {
                     src="/about-image.jpg"
                     alt="Himalayan Culture"
                     fill
-                    className="object-cover opacity-60"
+                    className="object-cover"
                     priority
                 />
                 <div className="absolute inset-0 bg-slate-500/30" />
