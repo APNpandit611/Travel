@@ -11,7 +11,7 @@ import {
 
 const Footer = () => {
     return (
-        <footer className="relative bg-slate-950/90 text-slate-300 backdrop-blur-xl">
+        <footer className="relative bg-slate-700/80">
             {/* Subtle top glow (matches hero tones) */}
             <div className="absolute inset-0 bg-linear-to-t from-slate-950 via-slate-900/60 to-slate-800/40 pointer-events-none" />
 

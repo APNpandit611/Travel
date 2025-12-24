@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { kanchenjungaTrek } from "@/lib/data";
 import type { Trek, ItineraryDay, Pricing, TripDetails } from "@/lib/data";
+import Image from "next/image";
 
 const TrekPage: React.FC = () => {
   const { title, overview, tripDetails, itinerary, images, reviews, pricing, transport } =
@@ -20,9 +21,11 @@ const TrekPage: React.FC = () => {
       {/* HERO */}
       <section className="relative h-[420px] overflow-hidden">
         {heroImage && (
-          <img
+          <Image
             src="/KAN.jpg"
             alt={title}
+            width={2500}
+            height={900}
             className="absolute inset-0 h-full w-full object-cover"
           />
         )}

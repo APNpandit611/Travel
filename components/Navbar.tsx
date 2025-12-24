@@ -45,9 +45,9 @@ export default function Navbar() {
         closeAll();
     }, [pathname]);
     return (
-        <nav className="fixed w-full top-0 left-0 z-50 bg-white/10 backdrop-blur-xl shadow-2xl border-b border-white/20">
-            <div className="max-w-7xl mx-auto px-4 sm:px-4 lg:px-4">
-                <div className="flex justify-between items-center h-20">
+        <nav className="sticky w-full top-0 left-0 z-50 bg-slate-600 backdrop-blur-3xl shadow-2xl border-b border-white/10">
+            <div className="bg-linear-to-t from-slate-950/20 via-slate-900/10 to-slate-800/5">
+                <div className="max-w-7xl mx-auto px-4 sm:px-4 lg:px-4 flex justify-between items-center h-20">
                     {/* Logo */}
                     <Link
                         href="/"
@@ -57,7 +57,10 @@ export default function Navbar() {
                             <Mountain className="w-7 h-7 text-white" />
                         </div>
                         <div className="text-2xl font-bold bg-gradient-to-r from-white to-gray-100 bg-clip-text text-transparent drop-shadow-lg">
-                            Trek<span className="text-blue-400">Nepal</span>
+                            Trek
+                            <span className="bg-gradient-to-r from-red-500 to-blue-700 bg-clip-text text-transparent">
+                                Nepal
+                            </span>
                         </div>
                     </Link>
 
@@ -65,7 +68,7 @@ export default function Navbar() {
                     <div className="hidden lg:flex items-center gap-4 space-x-1 lg:space-x-4">
                         <Link
                             href="/"
-                            className="group flex items-center gap-2 py-2 rounded-xl text-white/90 hover:text-white transition-all duration-300 font-medium"
+                            className="group flex items-center gap-2 py-2 rounded-xl text-white hover:text-white/80 transition-all duration-300 font-medium"
                         >
                             <Home className="w-5 h-5 group-hover:scale-110 transition-transform" />
                             Home
@@ -73,7 +76,7 @@ export default function Navbar() {
 
                         <Link
                             href="/about"
-                            className="group flex items-center gap-2 py-2 rounded-xl text-white/90 hover:text-white transition-all duration-300 font-medium"
+                            className="group flex items-center gap-2 py-2 rounded-xl text-white hover:text-white/80 transition-all duration-300 font-medium"
                         >
                             <Info className="w-5 h-5 group-hover:scale-110 transition-transform" />
                             About
@@ -86,7 +89,7 @@ export default function Navbar() {
                                     setActivitiesOpen(!activitiesOpen);
                                     setRegionsOpen(false); // close other dropdown
                                 }}
-                                className="flex items-center gap-2 py-2 rounded-xl text-white/90 hover:text-white transition-all duration-300 font-medium group cursor-pointer"
+                                className="flex items-center gap-2 py-2 rounded-xl text-white hover:text-white/80 transition-all duration-300 font-medium group cursor-pointer"
                             >
                                 <Map className="w-5 h-5 group-hover:scale-110 transition-transform" />
                                 Activities
@@ -168,7 +171,7 @@ export default function Navbar() {
                                     setRegionsOpen(!regionsOpen);
                                     setActivitiesOpen(false); // close other dropdown
                                 }}
-                                className="flex items-center gap-2 py-2 rounded-xl text-white/90 hover:text-white transition-all duration-300 font-medium group cursor-pointer"
+                                className="flex items-center gap-2 py-2 rounded-xl text-white hover:text-white/80 transition-all duration-300 font-medium group cursor-pointer"
                             >
                                 <Globe className="w-5 h-5 group-hover:scale-110 transition-transform" />
                                 Regions
@@ -245,7 +248,7 @@ export default function Navbar() {
 
                         <Link
                             href="/contactus"
-                            className="group flex items-center gap-2 py-2 rounded-xl text-white/90 hover:text-white transition-all duration-300 font-medium"
+                            className="group flex items-center gap-2 py-2 rounded-xl text-white hover:text-white/80 transition-all duration-300 font-medium"
                         >
                             <Contact className="w-5 h-5 group-hover:scale-110 transition-transform" />
                             Contact Us
@@ -295,13 +298,13 @@ export default function Navbar() {
   `}
                 >
                     <div
-                        className={`w-full pb-6 transform transition-all ease-[cubic-bezier(0.16,1,0.3,1)]`}
+                        className={`w-full pb-6 transform transition-all duration-300`}
                     >
                         <div className="bg-white/10 backdrop-blur-2xl border border-white/20 rounded-2xl shadow-2xl py-4">
                             {/* Main links */}
                             <div className="flex flex-col gap-6 px-6">
                                 <Link
-                                    className="flex items-center gap-3 text-white text-sm font-medium"
+                                    className="flex items-center gap-3 text-white hover:text-white/80 text-sm font-medium"
                                     href="/"
                                 >
                                     <Home className="w-5 h-5" />
@@ -309,7 +312,7 @@ export default function Navbar() {
                                 </Link>
 
                                 <Link
-                                    className="flex items-center gap-3 text-white text-sm font-medium"
+                                    className="flex items-center gap-3 text-white hover:text-white/80 text-sm font-medium"
                                     href="/about"
                                 >
                                     <Info className="w-5 h-5" />
@@ -427,11 +430,26 @@ export default function Navbar() {
                                     }`}
                                 >
                                     <div className="mt-4 ml-4 space-y-4 border-l border-white/20 pl-5">
-                                        <MobileItem label="Everest Region" onClick={closeAll}/>
-                                        <MobileItem label="Annapurna Region" onClick={closeAll}/>
-                                        <MobileItem label="Langtang Region" onClick={closeAll}/>
-                                        <MobileItem label="Kanchenjunga Region" onClick={closeAll}/>
-                                        <MobileItem label="Manaslu Region" onClick={closeAll}/>
+                                        <MobileItem
+                                            label="Everest Region"
+                                            onClick={closeAll}
+                                        />
+                                        <MobileItem
+                                            label="Annapurna Region"
+                                            onClick={closeAll}
+                                        />
+                                        <MobileItem
+                                            label="Langtang Region"
+                                            onClick={closeAll}
+                                        />
+                                        <MobileItem
+                                            label="Kanchenjunga Region"
+                                            onClick={closeAll}
+                                        />
+                                        <MobileItem
+                                            label="Manaslu Region"
+                                            onClick={closeAll}
+                                        />
                                     </div>
                                 </div>
                             </div>
@@ -491,7 +509,7 @@ function MobileItem({
     icon,
     label,
     onClick,
-    href
+    href,
 }: {
     icon?: React.ReactNode;
     label: string;
@@ -499,7 +517,11 @@ function MobileItem({
     href?: string;
 }) {
     return (
-        <Link href={href || "/"} onClick={onClick} className="flex items-center gap-3 text-white/80 text-sm">
+        <Link
+            href={href || "/"}
+            onClick={onClick}
+            className="flex items-center gap-3 text-white/80 text-sm"
+        >
             {icon && <span>{icon}</span>}
             <span>{label}</span>
         </Link>
