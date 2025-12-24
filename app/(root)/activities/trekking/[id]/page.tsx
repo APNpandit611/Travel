@@ -176,7 +176,7 @@ const BookingCard: React.FC<{ pricing: Pricing; tripDetails: TripDetails }> = ({
   <div className="rounded-2xl p-5 shadow-lg bg-slate-900/80">
     <p className="text-xs uppercase tracking-wide text-slate-400">Trip Price</p>
     <p className="mt-1 text-2xl font-semibold text-emerald-400">
-      ${pricing.costPerPerson.toLocaleString()}
+      ${pricing.costPerPerson.toLocaleString("en-US")}
       <span className="text-sm font-normal text-slate-300"> / person</span>
     </p>
 
