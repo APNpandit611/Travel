@@ -10,7 +10,7 @@ export default function HomeLayout({
     return (
         <div lang="en">
             <Navbar />
-            <main className="min-h-screen bg-[#020617] bg-[radial-gradient(circle_at_50%_0%,_rgba(30,58,138,0.3)_0%,_transparent_50%)] text-white">{children}</main>
+            <main className="min-h-screen bg-[linear-gradient(to_right_bottom,#4b6cb7,#182848,#2c3e50,#1a2a47,#16283c,#1f3b57,#1b2f4d,#162940,#1a324e,#1c3350,#1f3654,#223858)] text-white">{children}</main>
             <Footer />
         </div>
     );

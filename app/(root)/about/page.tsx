@@ -132,7 +132,7 @@ const About = () => {
             </section>
 
             {/* ---------------- SUSTAINABILITY ---------------- */}
-            <section className="py-24 px-4 max-w-7xl mx-auto">
+            <section className="pt-24 px-4 max-w-7xl mx-auto">
                 <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-12">
                     <div className="flex items-center gap-4 mb-6">
                         <Leaf className="text-emerald-400 w-8 h-8" />
