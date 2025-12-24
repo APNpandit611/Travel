@@ -355,6 +355,7 @@ export default function Navbar() {
                                             }
                                             label="Trekking"
                                             onClick={closeAll}
+                                            href="/activities/trekking"
                                         />
                                         <MobileItem
                                             icon={
@@ -490,15 +491,17 @@ function MobileItem({
     icon,
     label,
     onClick,
+    href
 }: {
     icon?: React.ReactNode;
     label: string;
     onClick?: () => void;
+    href?: string;
 }) {
     return (
-        <div onClick={onClick} className="flex items-center gap-3 text-white/80 text-sm">
+        <Link href={href || "/"} onClick={onClick} className="flex items-center gap-3 text-white/80 text-sm">
             {icon && <span>{icon}</span>}
             <span>{label}</span>
-        </div>
+        </Link>
     );
 }
