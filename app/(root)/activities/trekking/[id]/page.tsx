@@ -263,12 +263,12 @@ const BookingCard: React.FC<{ pricing: Pricing; tripDetails: TripDetails }> = ({
     tripDetails,
 }) => (
     <div className="rounded-2xl p-5 bg-white backdrop-blur-xl border border-slate-200/60 shadow-xl transition-all duration-300 hover:-translate-y-0.5 hover:shadow-2xl">
-        <p className="text-xs uppercase tracking-wide text-slate-400">
+        <p className="text-xs uppercase tracking-wide text-slate-900">
             Trip Price
         </p>
         <p className="mt-1 text-2xl font-semibold text-blue-600">
             ${pricing.costPerPerson.toLocaleString("en-US")}
-            <span className="text-sm font-normal text-slate-300">
+            <span className="text-sm font-normal text-slate-500">
                 {" "}
                 / person
             </span>
@@ -276,14 +276,14 @@ const BookingCard: React.FC<{ pricing: Pricing; tripDetails: TripDetails }> = ({
 
         <div className="mt-4 space-y-3 text-xs text-slate-100">
             <div className="flex flex-col gap-1">
-                <label className="text-[11px] text-slate-400">Start Date</label>
+                <label className="text-[11px] text-slate-500">Start Date</label>
                 <input
                     type="date"
                     className="h-9 rounded-lg border border-slate-300 px-2 text-xs outline-none focus:border-blue-400 text-slate-600"
                 />
             </div>
             <div className="flex flex-col gap-1">
-                <label className="text-[11px] text-slate-400">
+                <label className="text-[11px] text-slate-500">
                     Travelers (max {tripDetails.participants.max})
                 </label>
                 <input

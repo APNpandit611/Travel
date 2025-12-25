@@ -9,8 +9,8 @@ const SearchFilter = () => {
     ];
 
     return (
-        <section className="w-full flex items-center justify-center p-6">
-            <div className="flex flex-col md:flex-row items-center gap-3 rounded-2xl bg-white/40 backdrop-blur-xl border border-white/60 shadow-[0_20px_50px_rgba(0,0,0,0.1)] p-2 ring-1 ring-black/5 w-full max-w-4xl">
+        <section className="w-full flex items-start justify-center p-6">
+            <div className="flex flex-col items-start md:flex-row gap-3 rounded-2xl bg-white/40 backdrop-blur-xl border border-white/60 shadow-[0_20px_50px_rgba(0,0,0,0.1)] p-2 ring-1 ring-black/5 w-full max-w-4xl">
                 {/* 🔍 Search Input */}
                 <div className="w-full md:flex-1 flex items-center gap-2 bg-white/80 rounded-xl px-3 py-2 border border-slate-200/50 focus-within:ring-2 ring-indigo-400/20 transition-all shadow-sm">
                     <Search className="h-3.5 w-3.5 text-slate-400 shrink-0" />
@@ -22,7 +22,7 @@ const SearchFilter = () => {
                 </div>
 
                 {/* 🛠 Filter selects */}
-                <div className="w-full md:w-auto flex flex-wrap items-center gap-2 relative">
+                <div className="w-full md:w-auto flex flex-wrap gap-2">
                     {filters.map((filter) => (
                         <div key={filter.label} className="relative">
                             <select className="appearance-none rounded-xl bg-white/80 border border-slate-200/40 px-3 py-2 pr-8 text-[11px] font-bold text-slate-600 outline-none hover:bg-white hover:shadow-sm transition-all cursor-pointer">
