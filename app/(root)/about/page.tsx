@@ -119,10 +119,10 @@ const About = () => {
                         { value: "100%", label: "Local Team" },
                     ].map((stat, i) => (
                         <div key={i}>
-                            <h3 className="text-4xl md:text-5xl font-extrabold text-sky-400">
+                            <h3 className="text-4xl md:text-5xl font-extrabold text-white">
                                 {stat.value}
                             </h3>
-                            <p className="text-gray-500 mt-2">{stat.label}</p>
+                            <p className="text-white mt-2">{stat.label}</p>
                         </div>
                     ))}
                 </div>
@@ -130,7 +130,7 @@ const About = () => {
 
             {/* ---------------- WHY CHOOSE US ---------------- */}
             <section className=" px-4 max-w-7xl mx-auto">
-                <h2 className="text-5xl md:text-6xl font-extrabold text-gray-700 text-center mb-16">
+                <h2 className="text-5xl md:text-6xl font-extrabold text-white text-center mb-16">
                     Why Trek With Us
                 </h2>
 
@@ -154,7 +154,7 @@ const About = () => {
                     ].map((item, i) => (
                         <div
                             key={i}
-                            className="p-8 rounded-3xl bg-white/5 hover:bg-white/10 transition backdrop-blur-md group relative bg-linear-to-br from-white/80 to-slate-50/80 border border-slate-200/60 shadow-xl duration-300 hover:-translate-y-1 hover:shadow-2xl"
+                            className="p-8 rounded-3xl bg-white transition backdrop-blur-md group relative bg-linear-to-br from-white/80 to-slate-50/80 border border-slate-200/60 shadow-xl duration-300 hover:-translate-y-1 hover:shadow-2xl"
                         >
                             <div className="mb-6 text-sky-400">{item.icon}</div>
                             <h3 className="text-xl text-gray-950/80 font-bold mb-3">
@@ -168,7 +168,7 @@ const About = () => {
 
             {/* ---------------- SUSTAINABILITY ---------------- */}
             <section className="pt-24 px-4 max-w-7xl mx-auto">
-                <div className="transition backdrop-blur-md group relative bg-linear-to-br from-white/80 to-slate-50/80 border border-slate-200/60 shadow-xl duration-300 hover:-translate-y-1 hover:shadow-2xl rounded-3xl p-12">
+                <div className="transition backdrop-blur-md group relative bg-white border border-slate-200/60 shadow-xl duration-300 hover:-translate-y-1 hover:shadow-2xl rounded-3xl p-12">
                     <div className="flex items-center gap-4 mb-6">
                         <Leaf className="text-emerald-400 w-8 h-8" />
                         <h2 className="text-3xl text-gray-950/80 font-bold">
@@ -187,10 +187,10 @@ const About = () => {
 
             {/* ---------------- CTA ---------------- */}
             <section className="py-24 px-4 text-center">
-                <h2 className="text-3xl text-gray-950/80 md:text-5xl font-extrabold mb-6">
+                <h2 className="text-3xl text-white md:text-5xl font-extrabold mb-6">
                     Ready to Explore the Himalayas?
                 </h2>
-                <p className="text-gray-500 max-w-xl mx-auto mb-10">
+                <p className="text-gray-100 max-w-xl mx-auto mb-10">
                     Join thousands of travelers who trusted Trek Nepal to guide
                     them safely into the world’s greatest mountains.
                 </p>

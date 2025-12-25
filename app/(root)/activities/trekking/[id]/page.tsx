@@ -154,7 +154,7 @@ const TrekPage: React.FC = () => {
                     </section>
 
                     {/* Transport */}
-                    <section className="grid gap-4 p-5 md:grid-cols-2 text-sm text-slate-900 bg-white/10 backdrop-blur-xl border border-slate-200/60 shadow-xl transition-all duration-300 hover:-translate-y-0.5 hover:shadow-2xl rounded-xl">
+                    <section className="grid gap-4 p-5 md:grid-cols-2 text-sm text-slate-900 bg-white backdrop-blur-xl border border-slate-200/60 shadow-xl transition-all duration-300 hover:-translate-y-0.5 hover:shadow-2xl rounded-xl">
                         {/* Getting There */}
                         <div className="flex items-start gap-3">
                             <div className="w-8 h-8 shrink-0 flex items-center justify-center rounded-lg bg-sky-500/20 text-sky-600">
