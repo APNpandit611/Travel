@@ -45,7 +45,7 @@ export default function Navbar() {
         closeAll();
     }, [pathname]);
     return (
-        <nav className="sticky w-full top-0 left-0 z-50 bg-slate-600 backdrop-blur-3xl shadow-2xl border-b border-white/10">
+        <nav className="fixed w-full top-0 left-0 z-50 bg-slate-600 backdrop-blur-3xl shadow-2xl border-b border-white/10">
             <div className="bg-linear-to-t from-slate-950/20 via-slate-900/10 to-slate-800/5">
                 <div className="max-w-7xl mx-auto px-4 sm:px-4 lg:px-4 flex justify-between items-center h-20">
                     {/* Logo */}

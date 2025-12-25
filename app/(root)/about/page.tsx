@@ -9,6 +9,7 @@ import {
     ArrowRight,
     Target,
 } from "lucide-react";
+import { DynamicBreadcrumbs } from "@/components/DynamicBreadCrumbs";
 
 const About = () => {
     return (
@@ -23,6 +24,9 @@ const About = () => {
                     priority
                 />
                 <div className="absolute inset-0 bg-slate-500/30" />
+                {/* <div className="absolute top-6 left-6 z-20">
+                    <DynamicBreadcrumbs />
+                </div> */}
 
                 <div className="relative z-10 text-center px-4 max-w-4xl">
                     <h1 className="text-5xl md:text-7xl font-extrabold mb-6">
@@ -192,10 +196,10 @@ const About = () => {
                 </p>
 
                 <div className="flex flex-wrap justify-center gap-6">
-                    <button className="px-10 py-4 rounded-2xl bg-sky-500 hover:bg-sky-400 text-white font-bold flex items-center gap-2">
+                    <button className="px-10 py-4 rounded-2xl bg-blue-600 hover:bg-blue-700 text-white font-bold flex items-center gap-2 cursor-pointer">
                         View Treks <ArrowRight />
                     </button>
-                    <button className="px-10 py-4 text- rounded-2xl bg-slate-700/70 border border-slate-500/50 hover:bg-slate-600/70 text-white font-semibold">
+                    <button className="px-10 py-4 text- rounded-2xl bg-slate-800 border border-slate-500/50 hover:bg-slate-900 text-white font-semibold cursor-pointer">
                         Contact Us
                     </button>
                 </div>

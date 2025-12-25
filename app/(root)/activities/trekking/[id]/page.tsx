@@ -2,7 +2,7 @@
 // TrekPage.tsx
 import React, { useState } from "react";
 import { kanchenjungaTrek } from "@/lib/data";
-import type { ItineraryDay, Pricing, TripDetails } from "@/lib/data";
+import type { ItineraryDay, Pricing, Review, TripDetails } from "@/lib/data";
 import Image from "next/image";
 import { ArrowRight, MapPin } from "lucide-react";
 
@@ -16,7 +16,7 @@ const TrekPage: React.FC = () => {
         reviews,
         pricing,
         transport,
-    } = kanchenjungaTrek;
+    } = kanchenjungaTrek[0];
 
     const [showAllItinerary, setShowAllItinerary] = useState(false);
 
@@ -104,7 +104,7 @@ const TrekPage: React.FC = () => {
                                     key={h}
                                     className="flex items-center justify-start gap-3"
                                 >
-                                    <span className="h-1.5 w-1.5 rounded-full bg-blue-400" />
+                                    <span className="h-1.5 w-1.5 rounded-full bg-blue-600" />
                                     <span className="text-slate-900">{h}</span>
                                 </li>
                             ))}
@@ -215,7 +215,7 @@ const ItineraryCard: React.FC<{ day: ItineraryDay }> = ({ day }) => (
     <details className="p-3 group rounded-xl border bg-white/10 backdrop-blur-xl border-slate-200/40 shadow-xl overflow-hidden">
         <summary className="flex cursor-pointer items-center justify-between text-sm text-slate-900 select-none">
             <div className="flex items-center">
-                <span className="mr-3 inline-flex h-6 w-6 items-center justify-center rounded-full bg-blue-400 text-[11px] text-white">
+                <span className="mr-3 inline-flex h-6 w-6 items-center justify-center rounded-full bg-blue-600 text-[11px] text-white">
                     D{day.day}
                 </span>
                 <span className="text-slate-700">{day.title}</span>
@@ -266,7 +266,7 @@ const BookingCard: React.FC<{ pricing: Pricing; tripDetails: TripDetails }> = ({
         <p className="text-xs uppercase tracking-wide text-slate-400">
             Trip Price
         </p>
-        <p className="mt-1 text-2xl font-semibold text-blue-400">
+        <p className="mt-1 text-2xl font-semibold text-blue-600">
             ${pricing.costPerPerson.toLocaleString("en-US")}
             <span className="text-sm font-normal text-slate-300">
                 {" "}
@@ -296,7 +296,7 @@ const BookingCard: React.FC<{ pricing: Pricing; tripDetails: TripDetails }> = ({
             </div>
         </div>
 
-        <button className="mt-4 w-full rounded-xl bg-blue-400 px-4 py-3 text-sm font-semibold text-white hover:bg-blue-500">
+        <button className="mt-4 w-full rounded-xl bg-blue-600 px-4 py-3 text-sm font-semibold text-white hover:bg-blue-700 cursor-pointer">
             Reserve your spot
         </button>
 
@@ -342,7 +342,7 @@ const PricingDetails: React.FC<{ pricing: Pricing }> = ({ pricing }) => (
 );
 
 /* ----- Reviews ----- */
-const Reviews: React.FC<{ reviews: typeof kanchenjungaTrek.reviews }> = ({
+const Reviews: React.FC<{ reviews: Review[] }> = ({
     reviews,
 }) => (
     <section className="text-slate-900 space-y-3 rounded-2xl p-5 text-sm bg-white backdrop-blur-xl border border-slate-200/60 shadow-xl transition-all duration-300 hover:-translate-y-0.5 hover:shadow-2xl">
