@@ -57,7 +57,7 @@ export default function Navbar() {
                             <Mountain className="w-7 h-7 text-white" />
                         </div>
                         <div className="text-2xl font-bold bg-gradient-to-r from-white to-gray-100 bg-clip-text text-transparent drop-shadow-lg">
-                            Trek
+                            Tre
                             <span className="bg-gradient-to-r from-red-500 to-blue-700 bg-clip-text text-transparent">
                                 Nepal
                             </span>
