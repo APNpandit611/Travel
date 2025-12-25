@@ -11,8 +11,8 @@ export default function HomeLayout({
     return (
         <div lang="en">
             <Navbar />
-            
-            <main className="min-h-screen bg-linear-to-br from-[#6190e8] to-[#a7bfe8] backdrop-blur-xl shadow-inner text-slate-900">
+            <DynamicBreadcrumbs />
+            <main className="min-h-screen bg-linear-to-br from-[#c33764] to-[#1d2671] backdrop-blur-xl shadow-inner text-slate-900">
                 {children}
             </main>
 

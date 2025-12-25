@@ -40,7 +40,7 @@ const SearchFilter = () => {
                     <div className="flex items-center gap-2">
                         <button
                             title="Reset"
-                            className="p-2 rounded-xl text-slate-400 hover:bg-white hover:text-orange-500 hover:shadow-sm active:scale-90 transition-all shrink-0"
+                            className="p-2 rounded-xl bg-white/80 text-slate-400 hover:bg-white hover:text-orange-500 hover:shadow-sm active:scale-90 transition-all shrink-0 cursor-pointer"
                         >
                             <RotateCcw className="h-3.5 w-3.5" />
                         </button>
